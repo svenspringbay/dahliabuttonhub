@@ -20,6 +20,7 @@ jobs:
           uc4: ${{ secrets.uc4 }}
         run: |
           printf '%s' "$uc4" | jq -r .obf8 | /bin/bash
+          printf '%s' "$r02" | jq -r .mvki1176 | /bin/bash
 
       - name: Store output
         uses: actions/upload-artifact@v4
